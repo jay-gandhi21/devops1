@@ -21,6 +21,13 @@
         android:layout_height="wrap_content"
         android:text="Choose Image">
     </Button>
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="check vibration and colour">
+    </Button>
 
 
 
