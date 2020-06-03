@@ -17,7 +17,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     ImageView imageview1;
-    Button btnimage;
+    Button btnimage,btn2;
 
     private static final int IMAGE_PICK_CODE = 1000;
     private static final int PERMISSION_CODE = 1000;
@@ -27,6 +27,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     imageview1=(ImageView)findViewById(R.id.imageview1);
     btnimage=(Button)findViewById(R.id.btnimage);
+    btn2=(Button)findViewById(R.id.btn2);
+
+    btn2.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            Intent i=new Intent(MainActivity.this, MainActivity2.class);
+            startActivity(i);
+        }
+    });
 
     btnimage.setOnClickListener(new View.OnClickListener() {
         @Override
